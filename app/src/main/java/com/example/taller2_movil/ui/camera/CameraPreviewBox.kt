@@ -53,7 +53,7 @@ fun CameraPreviewBox(
                 .background(MaterialTheme.colorScheme.surfaceVariant),
             factory = { c ->
                 PreviewView(c).apply {
-                    setController(controller)  // ✅ así es la forma correcta
+                    setController(controller)  //
                     scaleType = PreviewView.ScaleType.FILL_CENTER
                 }
             }
@@ -84,4 +84,3 @@ fun CameraPreviewBox(
         }
     }
 }
-    
