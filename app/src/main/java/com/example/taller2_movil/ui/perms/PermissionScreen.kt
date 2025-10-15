@@ -22,20 +22,20 @@ fun PermissionScreen(onRequest: () -> Unit) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(horizontal = 24.dp),   // margen lateral
+                .padding(horizontal = 24.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
             Text(
                 text = stringResource(R.string.perm_title),
                 style = MaterialTheme.typography.titleMedium,
-                textAlign = TextAlign.Center,          // 👈 centra el texto
-                modifier = Modifier.fillMaxWidth()     // 👈 dale ancho para centrar
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth()
             )
             Spacer(Modifier.height(8.dp))
             Text(
                 text = stringResource(R.string.perm_subtitle),
-                textAlign = TextAlign.Center,          // 👈 centra el texto
+                textAlign = TextAlign.Center,
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(Modifier.height(24.dp))

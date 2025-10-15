@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Taller2_Movil</string>
-    <string name="perm_title">¡Hola!, necesitamos el permiso de Cámara para funcionar ✨</string>
-    <string name="perm_subtitle">Acepta los permisos para poder empezar 🎉</string>
+    <string name="perm_title">¡Hola!, necesitamos el permiso de Cámara para funcionar</string>
+    <string name="perm_subtitle">Acepta los permisos para poder empezar</string>
     <string name="perm_button">Desbloquear la Cámara</string>
     <string name="no_photos">No tienes fotos, toma una!</string>
     <string name="saved_ok">Foto guardada en almacenamiento externo de la app</string>

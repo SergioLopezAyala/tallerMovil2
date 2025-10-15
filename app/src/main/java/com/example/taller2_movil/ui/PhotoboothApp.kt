@@ -17,7 +17,7 @@ import com.google.accompanist.permissions.rememberPermissionState
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable
 fun PhotoboothApp() {
-    // Estado del permiso de cámara
+
     val camPerm = rememberPermissionState(Manifest.permission.CAMERA)
 
     Surface(
@@ -26,7 +26,6 @@ fun PhotoboothApp() {
     ) {
         when (camPerm.status) {
             is PermissionStatus.Granted -> {
-                // Si el permiso fue otorgado, mostramos la cámara y la galería de sesión
                 val sessionPhotos = remember { mutableStateListOf<android.net.Uri>() }
                 CameraScreen(
                     sessionPhotos = sessionPhotos,
@@ -34,7 +33,6 @@ fun PhotoboothApp() {
                 )
             }
             is PermissionStatus.Denied -> {
-                // Si no hay permiso, mostramos la pantalla de solicitud
                 PermissionScreen(
                     onRequest = { camPerm.launchPermissionRequest() }
                 )
